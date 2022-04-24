@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main()
+{
+    int tickettype,noofseats;
+    printf("Enter ticket type of your choice, there are 3 types of ticket :-\n");
+    printf("Standard Ticket - Press 1 \n");
+    printf("Semi-Premium Ticket - Press 2\n");
+    printf("Premium Ticket - Press 3\n");
+    printf("Enter total number of seats needed");
+    scanf("%d",&noofseats);
+    scanf("%d",&tickettype);
+        if (tickettype==1){
+            printf("Total cost of ticket is ",250*noofseats);
+            }
+        if (tickettype==2){
+            printf("Total cost of ticket is ",500*noofseats);
+            }
+        if (tickettype==3){
+            printf("Total Cost of Ticket is ",750*noofseats);
+            }
+    return 0;
+    }
+      
