@@ -2,22 +2,35 @@
 int main()
 {
     int tickettype,noofseats;
-    printf("Enter ticket type of your choice, there are 3 types of ticket :-\n");
-    printf("Standard Ticket - Press 1 \n");
-    printf("Semi-Premium Ticket - Press 2\n");
-    printf("Premium Ticket - Press 3\n");
-    printf("Enter total number of seats needed");
+    int totalcostofstandardticket;
+    int totalcostofsemipremiumticket;
+    int totalcostofpremiumticket;
+    
+    printf("Enter total number of seats needed :  \n");
     scanf("%d",&noofseats);
+    printf("There are 3 types of tickets \n \n");
+    
+    printf("Standard Ticket - Press 1  \n");
+    printf("Semi-Premium Ticket - Press 2  \n");
+    printf("Premium Ticket - Press 3  \n");
+
+    printf("Enter ticket type of your choice \n");
     scanf("%d",&tickettype);
-        if (tickettype==1){
-            printf("Total cost of ticket is ",250*noofseats);
+     if (tickettype==1){
+         totalcostofstandardticket=noofseats*250;
+            printf("Total cost of ticket is : %d \n",totalcostofstandardticket);
             }
-        if (tickettype==2){
-            printf("Total cost of ticket is ",500*noofseats);
+        else if(tickettype==2){
+            totalcostofsemipremiumticket=noofseats*500;
+            printf("Total cost of ticket is : %d \n",totalcostofsemipremiumticket);
             }
-        if (tickettype==3){
-            printf("Total Cost of Ticket is ",750*noofseats);
+        else if(tickettype==3){
+            totalcostofpremiumticket=noofseats*750;
+            printf("Total Cost of Ticket is : %d \n",totalcostofpremiumticket);
             }
+            else 
+            printf("Enter a correct choice \n \n");
     return 0;
     }
+
       
