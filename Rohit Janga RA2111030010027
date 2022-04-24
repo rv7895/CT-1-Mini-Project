@@ -7,7 +7,7 @@ int main()
     int totalcostofpremiumticket;
     
     printf("Enter total number of seats needed :  \n");
-    scanf("%d",&noofseats);
+    scanf("%d",&noofseats);                                    // basic values needed to input from user
     printf("There are 3 types of tickets \n \n");
     
     printf("Standard Ticket - Press 1  \n");
@@ -16,7 +16,7 @@ int main()
 
     printf("Enter ticket type of your choice \n");
     scanf("%d",&tickettype);
-     if (tickettype==1){
+     if (tickettype==1){                                     // Use of if-else loop in program
          totalcostofstandardticket=noofseats*250;
             printf("Total cost of ticket is : %d \n",totalcostofstandardticket);
             }
@@ -30,7 +30,7 @@ int main()
             }
             else 
             printf("Enter a correct choice \n \n");
-    return 0;
+    return 0;                                                   // End of program
     }
 
       
